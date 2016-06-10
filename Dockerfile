@@ -1,7 +1,7 @@
 FROM drecom/centos-base:latest
 
 RUN yum install -y \
-    gcc make openssl-devel readline-devel zlib-devel \
+    gcc gcc-c++ make openssl-devel readline-devel zlib-devel \
     http://www.percona.com/downloads/percona-release/redhat/0.1-3/percona-release-0.1-3.noarch.rpm Percona-Server-client-57 \
 &&  yum clean all
 
